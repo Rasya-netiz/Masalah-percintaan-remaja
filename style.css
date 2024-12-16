@@ -1,0 +1,221 @@
+/* Reset */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigasi */
+.navigasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6b6b;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  background: linear-gradient(to right, #ff6b6b, #ffa36c);
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.banner p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  animation: welcomeAnimation 6s infinite;
+}
+
+/* Keyframes Animasi */
+@keyframes welcomeAnimation {
+  0%, 100% { opacity: 0; }
+  20%, 40% { content: "Selamat Datang"; opacity: 1; }
+  60%, 80% { content: "di Website"; opacity: 1; }
+  40%, 60% { content: "Permasalahan Cinta"; opacity: 1; }
+}
+
+/* Pendahuluan */
+.pendahuluan {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pendahuluan h1 {
+  color: #ff6b6b;
+}
+
+.pendahuluan p {
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Masalah Umum */
+.msl {
+  padding: 20px;
+  text-align: center;
+}
+
+.box-masalah {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-masalah div {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.box-masalah div:hover {
+  transform: translateY(-10px);
+}
+
+.box-masalah h3 {
+  color: #ff6b6b;
+}
+
+/* Tips */
+.tips {
+  padding: 20px;
+  text-align: center;
+  background: #ffa36c;
+  color: #fff;
+}
+
+.box-tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-tips .box-ats {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box-tips .box-ats:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.box-tips h3 {
+  color: #ff6b6b;
+}
+
+/* Cerita Mimin */
+.crt {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-a {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.box-a h3 {
+  color: #ff6b6b;
+}
+
+/* Masukan */
+.masukan {
+  padding: 20px;
+  text-align: center;
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.masukan form {
+  margin-top: 20px;
+}
+
+.masukan input, .masukan textarea {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.masukan button {
+  background: #ffa36c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.masukan button:hover {
+  background: #ff6b6b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
